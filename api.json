@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "helado de crema de oreo 1kg",
+      "precio": 2500,
+      "img": "./img/oferta1.jpg"
+    },
+    {
+      "id": 2,
+      "title": " cofler dulce de leche 1kg ",
+      "precio": 2000,
+      "img": "./img/oferta2.jpg"
+    },
+    {
+      "id": 3,
+      "title": "helado de durazno y chocolate  1kg",
+      "precio": 1850,
+      "img": "./img/oferta3.jpg"
+    },
+    {
+      "id": 4,
+      "title": "helado de chocolate 1kg",
+      "precio": 2000,
+      "img": "./img/oferta4.jpg"
+    },
+    {
+      "id": 5,
+      "title": "galletas de chocolate 1kg",
+      "precio": 1850,
+      "img": "./img/oferta5.jpg"
+    },
+    {
+      "id": 6,
+      "title": "helado de galleta de cholate 1kg",
+      "precio": 1900,
+      "img": "./img/oferta6.jpg"
+    },
+   
+    {
+      "id": 8,
+      "title": "helado de galleta de cholate 1kg",
+      "precio": 1500,
+      "img": "./img/oferta8.jpg"
+    },
+    {
+      "id": 1,
+      "title": "helado de crema de oreo 1kg",
+      "precio": 2500,
+      "img": "./img/oferta1.jpg"
+    }
+  ]

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/c91c0a21e3.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>ICE BOOM</title>
+</head>
+
+<body>
+  <nav class="menu">
+    <div class="container">
+      <img class="logo" src="img/icon.png" alt="logo de ice.boom" />
+      <span class="navbar-brand letra">ICE BOOM</span>
+    </div>
+    <div class="btnCarrito">
+      <label for="btnCarrito">
+        <i id="icono-carrito"  class="fa fa-shopping-cart fa-inverse" aria-hidden="true"></i>
+      </label>
+    </div>
+    <span id="btnMenu">
+    </span>
+  </nav>
+
+  <input type="checkbox" id="btnCarrito" />
+  <div class="containerCarrito">
+    <table class="table">
+      <tbody id="itemsCarrito"></tbody>
+      <tfoot>
+        <tr id="footer">
+          <th scope="row" colspan="5">Carrito vacío</th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+  <main>
+    <section>
+      <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center"
+        style="background-image: url(img/header-desktop.jpg);background-size: cover;">
+        <div class=" col-md-5= text-center">
+          <h1 class="display-4 fw-normal letra">ICE BOOM</h1>
+          <p class="lead fw-normal letra">Somos una empresa que se dedica a brindar los mejores sabores de helado de todo el pais.</p>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </section>
+    <section class="container">
+      <hr>
+      <h2 class="text-center mt-5 title-producto" >Productos</h2>
+      <div class="container row mb-5 mt-5 mb-5" id="cards">
+      </div>
+    </section>
+    <template id="templateCard">
+      <div class="col-sm 12 col-md 2  col-lg 3 ">
+      <div class="card mb-3 container d-flex justify-content-around text-center"  style="width: 18rem;">
+        <div class="g-0">
+            <img src="" class="itemImg img-prducto rounded-start" alt="">
+            <div class="card-body">
+              <div class="card-title ">
+                <h4 class="text-dark title title-letra">nombre</h4>
+             
+                <h3 class="text-dark precio title-precio">$ precio</h3>
+              </div>
+              <button type="button" class="w-100 btn btn-color btnAgregarCarrito btn-posi">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </template>
+    <template id="templateCarrito">
+      <tr>
+        <td scope="row"><img src="" alt="" class="imgCarrito" /></td>
+        <td class="mt-2"></td>
+        <td></td>
+        <td>
+          <button class="btn btn-dark btnAdd btn-sm">+</button>
+          <button class="btn btn-dark btnDelete btn-sm">-</button>
+        </td>
+        <td>$ <span></span></td>
+      </tr>
+    </template>
+    <template id="templateFooter">
+      <th scope="row" colspan="2">Total productos</th>
+      <td></td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciarCarrito">
+          Vaciar Carrito
+        </button>
+        <button class="btn btn-success btn-sm" id="comprarCarrito">
+          Comprar
+        </button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+  </main>
+  
+
+
+  <footer class="container-fluid pt-5 ">
+    <div class="row p-5 bg-footer text-white ">
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h3 class="title-footer "><img class="logo" src="img/logo.helado1.jpg" alt="logo de heladeria iceboom">Ice Boom
+        </h3>
+        <p class="text-descripcion-footer">nos especializamos en brindar <br> la mejor calidad de helados <br> del pais
+        </p>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h5 class="subtitulo-footer">Secciones</h5>
+        <div class="mb-2">
+          <a href="index.html" class="text-decoration-none  color-a text-a">Home</a>
+        </div>
+        <div class="mb-2">
+          <a href="ofertas.html" class="text-decoration-none  color-a text-secondary text-a">Ofertas</a>
+        </div>
+        <div class="mb-2">
+          <a href="nosotros.html" class="text-decoration-none color-a text-a">Nosotros</a>
+        </div>
+        <div class="mb-2">
+          <a href="ubicacion.html" class="text-decoration-none color-a  text-a">Ubicacion</a>
+        </div>
+        <div class="mb-2">
+          <a href="contacto.html" class="text-decoration-none color-a  text-a">Contacto</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h5 class="subtitulo-footer">Contactos</h5>
+        <div class="mb-2">
+          <a href="https://twitter.com " class="text-decoration-none color-a  text-a" target="_blank">
+            twiter</a>
+        </div>
+        <div class="mb-2">
+          <a href="https://www.facebook.com/" class="text-decoration-none color-a  text-a" target="_blank">
+            facebook</a>
+        </div>
+        <div class="mb-2">
+          <a href="https://www.instagram.com" class="text-decoration-none color-a  text-a" target="_blank">
+            instagram</a>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <h5 class="subtitulo-footer">links</h5>
+        <div class="mb-2">
+          <a href="export.html" class="text-decoration-none color-a  text-a">terminos y condiciones</a>
+        </div>
+        <div class="mb-2">
+          <a href="export.html" class="text-decoration-none color-a  text-a">politica y privacidad</a>
+        </div>
+      </div>
+      <div class="col-xs-12 pt-5">
+        <p class="text-white text-center text-coyright">
+          copyright - all rights reserver © ice boom 2022
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
